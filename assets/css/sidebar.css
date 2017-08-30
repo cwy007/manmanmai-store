@@ -6,8 +6,5 @@ ul.nav.nav-pills {
 }
 
 ul.nav.nav-pills > li > a {
-  /*margin: auto -8px;*/
-  /*padding: auto 2px !important;*/
-  /*.nav>li>a */
   padding: 10px 0 10px 4px;
 }
