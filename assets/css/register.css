@@ -1,0 +1,17 @@
+﻿/** 
+* @描述：前台用户注册CSS样式文件 
+
+* @版本：beta 1.0 
+*/
+#register-container{width: 100%;height: 410px;padding-top: 40px;background-color: #9AD4EB;margin-top: -5px;}
+.register-box{width: 450px;}
+.register-box .register-title{background: #FFF;}
+.register-box .register-title h3{margin:0px;font-size: 18px;font-family: "microsoft yahei";font-weight: 700;line-height: 20px;padding: 15px 0 15px 180px;color: #555;}
+.register-box .register-content{background: #FFF;padding: 0 20px 15px;overflow: hidden;zoom: 1;}
+.register-box .register-content table{width: 420px;min-height: 300px;}
+.register-box .register-content table .input-text{width: 300px;height: 25px;margin-left: 10px;}
+.register-box .register-content table .check-code{width: 100px;height: 25px;margin-left: 10px;}
+.register-box .register-content table .check-img{width: 90px;height: 30px;margin-bottom: -11px;margin-left: 5px;margin-right: 5px;}
+.register-box .register-content table .register-btn{cursor:pointer;border: none;background-color: #ff9000;color: #fff;font-weight: 600;margin-left: 25px;width: 100px;height: 28px;font-size: 14px;border-radius: 3px;}
+.register-box .register-content table td .need{margin-left: 5px;color: #f30;font-size: 14px;}
+.register-box .register-content table .clause a{font-weight: 600;color: #f30;}

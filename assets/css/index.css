@@ -1,0 +1,170 @@
+﻿/** 
+* @描述：首页CSS样式文件 
+
+* @版本：beta 1.0 
+*/
+/* PJH 1102 begin Banner部分 */
+#banner{margin-top: -5px;position: relative;}
+#banner .banner-bg{overflow: hidden;width: 100%;position: absolute;top: 0px;}
+#banner .banner-bg ul{width: 100%;overflow: hidden;height: 381px;}
+#banner .banner-bg ul li{width:100%;height:381px;float: left;display: none;}
+#banner .banner-bg ul li.selected{display: block;}
+#banner .banner-fore{position: absolute;top: 0px;right: 50%;margin-right: -360px;width: 750px;height: 380px;background-color: red;color: #fff;z-index: 80;border-bottom: 1px solid #eee;}
+#banner .banner-num{position: absolute;top: 353px;left: 50%;z-index: 81;margin-left: -85px;}
+#banner .banner-num li{width: 20px;height: 20px;line-height: 20px;border-radius: 50%;color: #ff9000;background-color: #fff;margin-left: 6px;font-size: 8px;float: left;text-align: center;cursor: pointer;}
+#banner .banner-num li.selected,#banner .banner-num li:hover{color: #fff;background-color: #ff9000;}
+#banner .banner-fore ul{width: 750px;height: 380px;overflow: hidden;}
+#banner .banner-fore ul li{float: left;display: none;}
+#banner .banner-fore ul li.selected{display: block;}
+#banner .banner-right{position: absolute;top: 0px;right: 50%;margin-right: -600px;width: 240px;height: 380px;background-color: #fff;color: #333;z-index: 80;border-bottom: 1px solid #eee;}
+#timil-limit-shopping{width: 100%;height: 220px;position: relative;}
+#timil-limit-shopping .slider-img{width: 100%;height: 180px;overflow: hidden;}
+#timil-limit-shopping .slider-img li{display: none;float: left;}
+#timil-limit-shopping .slider-img li.selected{display: block;}
+#timil-limit-shopping .slider-desc{width: 100%;position: absolute;bottom: 0px;height: 58px;background-color: rgba(0,0,0,0.5);overflow: hidden;}
+#timil-limit-shopping .slider-desc li{display: none;float: left;}
+#timil-limit-shopping .slider-desc li.selected{display: block;}
+#timil-limit-shopping .slider-desc li .title{margin: 3px 15px;}
+#timil-limit-shopping .slider-desc li .title a{color: #fafafa;}
+#timil-limit-shopping .slider-desc li .ext{width: 240px;height: 30px;background-image: url('./assets/images/tlb.png');background-repeat: no-repeat;margin-top: -2px;}
+#timil-limit-shopping .slider-desc li .ext .price{color: #fff;font-weight: 600;margin: 4px 35px;font-size: 20px;}
+#timil-limit-shopping .slider-desc li .ext .buy{padding: 1px 10px;background-color: #f30;margin: 2px 6px;border-radius: 2px;font-weight: 600;}
+#timil-limit-shopping .slider-desc li .ext .buy a{color: #fff;}
+#timil-limit-shopping .prev{position: absolute;left: 0px;top: 70px;width: 18px;height: 40px;background-color: rgba(0,0,0,0.2);color: #fff;font-size: 18px;font-family: 黑体;text-align: center;line-height: 40px;cursor: pointer;}
+#timil-limit-shopping .next{position: absolute;right: 0px;top: 70px;width: 18px;height: 40px;background-color: rgba(0,0,0,0.2);color: #fff;font-size: 18px;font-family: 黑体;text-align: center;line-height: 40px;cursor: pointer;}
+#banner .banner-right .bottom-tabs .tab-nav{padding: 0px;margin-left: 1px;}
+#banner .banner-right .bottom-tabs .tab-nav li{float: left;width: 80px;text-align: center;background-color: #f0f0f0;border-top: 1px solid #e6e6e6;margin-left: -1px;overflow: hidden;height: 28px;line-height: 28px;color: #645F5F;cursor: pointer;}
+#banner .banner-right .bottom-tabs .tab-nav li.selected{background-color: #fff;color: #645F5F;border: none;}
+#banner .banner-right .bottom-tabs .tab-panel > li{display: none;width: 240px;height: 130px;overflow: hidden;float: left;}
+#banner .banner-right .bottom-tabs .tab-panel li.selected{display: block;}
+#banner .banner-right .bottom-tabs .tab-panel .tab-panel-list{margin: 8px 16px;}
+#banner .banner-right .bottom-tabs .tab-panel .tab-panel-list > li{height: 23px;line-height: 23px;overflow: hidden;}
+#banner .banner-right .bottom-tabs .tab-panel .tab-panel-list > li i{margin-right: 5px;font-size: 10px;color: #BBB5B5;}
+/* PJH 1102 end Banner部分 */
+/* PJH 1103 begin 首页推荐静态滚动部分 */
+#static-recommend{margin-top: 390px;}
+#recommend-static-scroll{width: 990px;height: 150px;position: relative;overflow: hidden;}
+#recommend-static-scroll ul{position: absolute;left: 0px;top: 0px;}
+#recommend-static-scroll ul li{width: 990px;height: 150px;float: left;}
+#recommend-static-scroll ul li .scroll-block{width: 196px;margin-left: 2px;height: 150px;float: left}
+#recommend-static-scroll .prev{position: absolute;left: 0px;top: 55px;width: 25px;height: 50px;background-color: rgba(0,0,0,0.2);color: #fff;font-size: 18px;font-family: 黑体;text-align: center;line-height: 50px;cursor: pointer;display: none;}
+#recommend-static-scroll .next{position: absolute;right: 0px;top: 55px;width: 25px;height: 50px;background-color: rgba(0,0,0,0.2);color: #fff;font-size: 18px;font-family: 黑体;text-align: center;line-height: 50px;cursor: pointer;display: none;}
+#big-recommend{margin-top: 15px;}
+#big-recommend .big-picture{overflow: hidden;}
+#big-recommend .small-picture{width: 239px;overflow: hidden;}
+#big-recommend .small-picture .up{display: block;position: relative;height: 199px;text-align: center;}
+#big-recommend .border-right{border-right: 1px solid #eee;}
+#big-recommend .border-top{border-top: 1px solid #eee;}
+#big-recommend .border-bottom{border-bottom: 1px solid #eee;}
+#big-recommend .small-picture strong{position: absolute;width: 180px;margin-left: -90px;top: 15px;left: 50%;font-size: 16px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;font-weight: bold;color: #333;font-family: "Microsoft YaHei";}
+#big-recommend .small-picture em{position: absolute;width: 140px;top: 40px;left: 50%;text-align: center;margin-left: -70px;
+font-size: 14px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;color: #666;font-family: "Microsoft YaHei";}
+#big-recommend .small-picture img{position: absolute;width: 160px;height: 120px;top: 70px;left: 40px;}
+#big-recommend .small-picture .down{display: block;position: relative;height: 199px;text-align: center;}
+/* PJH 1103 end 首页推荐静态滚动部分 */
+/* PJH 1106 begin 推荐商品Tab切换部分 */
+#recommend-tabs{margin-top: 15px;width: 960px;}
+#recommend-tabs .tab-nav{text-align: center;}
+#recommend-tabs .tab-nav > li{line-height: 30px;background-color: transparent;width: 20%;height: 30px;float: left;position: relative;z-index: 1;cursor: pointer;}
+#recommend-tabs .tab-nav > li.selected{border-bottom: 2px solid #FF9000;}
+#recommend-tabs .tab-panel{float: left;border-top: solid 1px #F0F0F0;height: 251px;overflow: hidden;}
+#recommend-tabs .tab-panel > li{display: none;}
+#recommend-tabs .tab-panel > li.selected{display: block;}
+#recommend-tabs .tab-panel > li .sale-goods-list{width: 100%;overflow: hidden;border-bottom: solid 1px #F0F0F0;}
+#recommend-tabs .tab-panel > li .sale-goods-list li{width: 190px;height: 235px;padding: 15px 0 0;float: left;
+overflow: hidden;}
+#recommend-tabs .tab-panel > li .sale-goods-list li.border-left{border-left: solid 1px #F0F0F0;}
+#recommend-tabs .tab-panel > li .sale-goods-list li.border-right{border-right: solid 1px #F0F0F0;}
+#recommend-tabs .tab-panel > li .sale-goods-list li dl{width: 160px;margin: 0 auto auto;position: relative;z-index: 1;}
+#recommend-tabs .tab-panel > li .sale-goods-list li dl dt.goods-name{font-family: Tahoma, Geneva, sans-serif;line-height: 16px;width: 160px;height: 32px;position: absolute;z-index: auto;top: 164px;left: 0;overflow: hidden;}
+#recommend-tabs .tab-panel > li .sale-goods-list li dl dd.goods-thumb{width: 160px;height: 160px;position: absolute;z-index: auto;top: 0;left: 0;margin: 0px;}
+#recommend-tabs .tab-panel > li .sale-goods-list li dl dd.goods-thumb img{max-height: 160px;max-width: 160px;margin-top: expression(160-this.height/2);}
+#recommend-tabs .tab-panel > li .sale-goods-list li dl dd.goods-ext .goods-price{line-height: 20px;color: #FF9000;position: absolute;z-index: auto;top: 200px;left: 0;font-weight: 600;}
+#recommend-tabs .tab-panel > li .sale-goods-list li dl dd.goods-ext .goods-sale-number{line-height: 20px;color: #999;position: absolute;z-index: auto;top: 200px;right: 0;}
+/* PJH 1106 end 推荐商品Tab切换部分 */
+/*PJH 1106 begin 限时折扣轮播部分 */
+#time-limit-discount{width: 237px;height: 250px;margin-top: 47px;overflow: hidden;position: relative;border-left: 1px solid #e3e3e3;border-right: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;border-top: 2px solid #FF9000;}
+#time-limit-discount ul{margin: 0px;padding: 0px;}
+#time-limit-discount ul li{width: 237px;height: 250px;float:left;position: relative;z-index: 100;display: none;}
+#time-limit-discount ul li.selected{display: block;}
+#time-limit-discount ul li div.goods-name{text-overflow:ellipsis;white-space:nowrap;bottom:3px;left:30px;position: absolute;width:200px;overflow: hidden;}
+#time-limit-discount ul li div.goods-thumb{position: absolute;top: 30px;left: 35px;}
+#time-limit-discount ul li div.goods-thumb a{text-align: center;vertical-align: middle;display: table-cell;width: 160px;height: 160px;overflow: hidden;}
+#time-limit-discount ul li div.goods-thumb img{max-width: 170px;max-height: 170px;}
+#time-limit-discount ul li div.goods-price{position: absolute;font: 600 16px/30px Verdana;color: #07c01d;bottom: 20px;left: 30px;}
+#time-limit-discount ul li div.goods-price .normal-price{text-decoration: line-through;color: #AAA;font-weight: normal;font-size: 13px;margin-left: 10px;}
+#time-limit-discount ul li div.goods-price-discount {position: absolute;color: #FFF;background: url(../images/home_bg.png) no-repeat -100px -100px;text-align: center;width: 48px;height: 24px;padding: 28px 0 16px 0;bottom: 25px;right: 8px;}
+#time-limit-discount ul li div.time-remain {width: 100%;position: absolute;color: #999;text-align: center;top: 5px;left: 0;}
+#time-limit-discount ul li div.time-remain i.clock{background: url(../images/home_bg.png) no-repeat -40px -60px;vertical-align: middle;display: inline-block;width: 11px;height: 11px;}
+#time-limit-discount ul li div.time-remain em{font-weight: 600;color: #555;margin: 0px 3px;}
+#time-limit-discount .prev{position: absolute;left: 5px;background: url(../images/home_bg.png) no-repeat -160px -70px;width: 19px;height: 29px;z-index: 101;top: 100px;cursor: pointer;opacity: 0.25!important;}
+#time-limit-discount .next{position: absolute;right: 5px;background: url(../images/home_bg.png) no-repeat -180px -70px;width: 19px;height: 29px;z-index: 101;top: 100px;cursor: pointer;opacity: 0.25!important;}
+/*PJH 1112 end 限时折扣轮播部分 */
+
+/*PJH 1112 begin 首页分类主体列表部分 */
+.main{width: 1200px;margin: 20px auto;}
+.main .big{width: 250px;}
+.main .big .floor{font-size: 16px;margin: 8px;}
+.main .big .floor a{font-weight: 600}
+.main .big .topic-img{}
+.main .product-list{width: 950px;overflow: hidden;}
+.main .product-list .tab-nav{color: #999;}
+.main .product-list .tab-nav > ul{margin: 0px;padding: 0px;}
+.main .product-list .tab-nav > ul > li{float: left;width: 190px;text-align: center;height: 37px;line-height: 37px;}
+.main .product-list .tab-nav > ul > li.selected{border-bottom: 3px solid #ff9900;}
+.main .product-list .tab-panel{display: none;}
+.main .product-list .tab-panel.selected{display: block;}
+/*PJH 分类热门推荐部分开始*/
+.main .product-list .tab-panel .left-block{width: 190px;height: 400px;}
+.main .product-list .tab-panel .right-block{width: 190px;height: 400px;margin-right: 2px;}
+.main .product-list .tab-panel .middle-block .recommend-slider{width: 567px;height: 199px;}
+.main .product-list .tab-panel .prompt-block{width: 188px;height: 199px;position: relative;}
+.main .product-list .tab-panel .prompt-block .prompt-font{display:none;position: absolute;font-weight: 600;color: #FFF;background: url(../images/home_bg.png) no-repeat -100px -100px;text-align: center;width: 48px;height: 24px;line-height: 24px;padding: 23px 0 16px 0;top: -4px;right: -1px;}
+.main .product-list .tab-panel .prompt-block strong{position: absolute;width: 180px;top: 40px;left: 20px;font-size: 16px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;font-weight: bold;color: #333;font-family: "Microsoft YaHei";}
+.main .product-list .tab-panel .prompt-block em a{position: absolute;width: 180px;top: 65px;left: 5px;text-align: center;font-size: 14px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;color: #666;font-family: "Microsoft YaHei";}
+.main .product-list .tab-panel .prompt-block img{position: absolute;width: 120px;height: 120px;bottom: 5px;left: 60px;max-width: 100px;max-height: 100px;}
+.main .product-list .tab-panel .prompt-block .price{font-weight: 600;color: #ff9900;font-size: 16px;position: absolute;top: 15px;left: 20px;}
+/*PJH 分类热门推荐部分结束*/
+
+/*主体分类推荐图片轮播部分开始*/
+.prompt-slider{width: 567px;height: 200px;overflow: hidden;position: relative;}
+.prompt-slider .slider{position: absolute;left: 0px;top: 0px;}
+.prompt-slider .slider > li{width: 567px;height: 200px;float: left;}
+.prompt-slider > .prev{position: absolute;left: 2px;top: 80px;width: 18px;height: 40px;background-color: rgba(0,0,0,0.2);color: #fff;font-size: 18px;font-family: 黑体;text-align: center;line-height: 40px;cursor: pointer;}
+.prompt-slider > .next{position: absolute;right: 3px;top: 80px;width: 18px;height: 40px;background-color: rgba(0,0,0,0.2);color: #fff;font-size: 18px;font-family: 黑体;text-align: center;line-height: 40px;cursor: pointer;}
+.prompt-slider > .slider-num{position: absolute;right: 8px;top: 8px;}
+.prompt-slider > .slider-num > li{cursor:pointer;width: 15px;height: 15px;background-color: #fff;float: left;margin-right: 5px;border-radius: 50%;}
+.prompt-slider > .slider-num > li.selected{background-color: #ff9900;}
+/*主体分类推荐图片轮播部分结束*/
+/*PJH 产品列表开始*/
+.main .product-list .tab-panel > ul{padding: 0px;margin-left:1px;}
+.main .product-list .tab-panel > ul > li{float: left;width: 188px;border:1px solid #F0F0F0;text-align: center;height: 198px;margin-left: -1px;margin-top: -1px;position: relative;}
+.main .product-list .tab-panel > ul > li .front{width: 100%;height: 100%;z-index: 2;position: absolute;}
+.main .product-list .tab-panel > ul > li .front .goods-name{position: absolute;bottom:20px;left: 25px;}
+.main .product-list .tab-panel > ul > li .front .goods-thumb{position: absolute;top: 10px;left: 25px;}
+.main .product-list .tab-panel > ul > li .front .goods-thumb img{max-height: 140px;max-width: 140px;}
+.main .product-list .tab-panel > ul > li .front .goods-price{position: absolute;bottom: 2px;left: 25px;font-weight: 600;color: #ff9900;}
+.main .product-list .tab-panel > ul > li .front .sale-number{position: absolute;bottom: 2px;right: 25px;color: #999;}
+.main .product-list .tab-panel > ul > li .back{width: 100%;height: 100%;z-index: 3;background-color: rgba(0,0,0,0.4);display: none;}
+/*PJH 产品列表结束*/
+/*PJH 1112 end 首页分类主体列表部分 */
+
+/* PJH 1113 begin 浮动在左侧的楼层定位部分 */
+#float-floor{z-index: 5;position: fixed;left: 50%;margin-left:-638px;top: 200px;display: none;}
+#float-floor ul{margin: 0px;padding: 0px;}
+#float-floor ul > li{position: relative;width: 30px;height: 30px;line-height: 30px;margin-top: 2px;text-align: center;}
+#float-floor ul > li > .bd{position: absolute;left: 0px;top: 0px;width: 100%;height: 100%;display: block;}
+#float-floor ul > li > .bd > span{color: #999;border-bottom: 1px dotted #ff9000;padding: 0px 0px 5px;}
+#float-floor ul > li > .hd{position: absolute;left: 0px;top: 0px;width: 100%;height: 100%;display: none;font-size: 10px;}
+#float-floor ul > li > .selected{display: block !important;}
+/* #float-floor ul > li > .jydq{background-color:#669900;background: url(../images/category/jydq.png) no-repeat;border-radius: 2px;}
+#float-floor ul > li > .sjsm{background-color:#669900;background: url(../images/category/sjsm.png) no-repeat;border-radius: 2px;}
+#float-floor ul > li > .dnws{background-color:#669900;background: url(../images/category/dnws.png) no-repeat;border-radius: 2px;}
+#float-floor ul > li > .sysx{background-color:#669900;background: url(../images/category/sysx.png) no-repeat;border-radius: 2px;}
+#float-floor ul > li > .bgwl{background-color:#669900;background: url(../images/category/bgwl.png) no-repeat;border-radius: 2px;}
+#float-floor ul > li > .cwdq{background-color:#669900;background: url(../images/category/cwdq.png) no-repeat;border-radius: 2px;}
+#float-floor ul > li > .ghjk{background-color:#669900;background: url(../images/category/ghjk.png) no-repeat;border-radius: 2px;}
+#float-floor ul > li > .ysjt{background-color:#669900;background: url(../images/category/ysjt.png) no-repeat;border-radius: 2px;}
+#float-floor ul > li > .nfnb{background-color:#669900;background: url(../images/category/nfnb.png) no-repeat;border-radius: 2px;}
+#float-floor ul > li > .zblp{background-color:#669900;background: url(../images/category/zblp.png) no-repeat;border-radius: 2px;} */
+/* PJH 1113 end 浮动在左侧的楼层定位部分 */

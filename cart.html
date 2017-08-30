@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta name="Keywords" content="慢慢买,比价网,导购网站平台,数码比价,家电比价，购物比价" />
+    <meta name="Description" content="慢慢买是一个专业的购物导购、比价网站，汇集了所有主流网上商城的报价、活动促销、历史价格走势等信息。慢慢买倡导理性消费，以让用户买到高性比价商品为宗旨的比价网。" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>购物车列表页面</title>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/common.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/cart.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- PJH 1102 begin 顶部导航 -->
+<div id="top-nav">
+	<div class="pjh-container">
+		<!-- 顶部左侧导航 -->
+		<ul id="tl-site-nav">
+			<li>欢迎来到<strong>慢慢买!</strong></li>
+			<li>[<a href="#">请登录</a>]</li>
+			<li>[<a href="register.html">免费注册</a>]</li>
+		</ul>
+		<!-- 顶部右侧导航 -->
+		<ul id="tr-site-nav">
+			<li>
+				<a href="#">手机慢慢买</a><i></i>
+				<div class="top-nav-bg">
+					<ul>
+						<li>
+							<a href="#">Android版本</a>
+						</li>
+						<li><a href="#">IOS版本</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="spanjj">|</li>
+			<li>
+				<a href="#">我的慢慢买</a><i></i>
+				<div class="top-nav-bg">
+					<ul>
+						<li>
+							<a href="#">Android版本</a>
+						</li>
+						<li><a href="#">IOS版本</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="spanjj">|</li>
+			<li>
+				<a href="#">购物省钱助手</a><i></i>
+				<div class="top-nav-bg">
+					<ul>
+						<li>
+							<a href="#">Android版本</a>
+						</li>
+						<li><a href="#">IOS版本</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="spanjj">|</li>
+			<li>
+				<a href="#">新手帮助</a><i></i>
+				<div class="top-nav-bg new-user-help">
+					<ul>
+						<li>
+							<a href="#">Android版本</a>
+						</li>
+						<li><a href="#">IOS版本</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!-- PJH 1102 end 顶部导航 -->	
+
+<!-- PJH 1204 begin 顶部购物流程导航部分 -->
+<div class="pjh-container">
+	<div id="top-route">
+		<!-- Logo -->
+		<div id="logo" calss="pull-left">
+			<a href="#"><img src="assets/images/logo.png" alt="慢慢买" title="慢慢买"/></a>
+		</div>
+		<!-- Logo -->
+		<!-- 购物流程部分 -->
+		<ul class="ncc-flow pull-right">
+			<li class="current">
+				<i class="step1"></i>
+				<p>我的购物车</p>
+				<sub></sub>
+				<div class="hr"></div>
+			</li>
+			<li>
+				<i class="step2"></i>
+				<p>填写核对购物信息</p>
+				<sub></sub>
+				<div class="hr"></div>
+			</li>
+			<li>
+				<i class="step3"></i>
+				<p>支付提交</p>
+				<sub></sub>
+				<div class="hr"></div>
+			</li>
+			<li>
+				<i class="step4"></i>
+				<p>我的购订单完成物车</p>
+				<sub></sub>
+				<div class="hr"></div>
+			</li>
+		</ul>
+		<!-- 购物流程部分 -->
+	</div>
+	<div class="clearfix"></div>
+	<form method="post" action="">
+		<div class="ncc-main">
+			<div class="ncc-main-title">
+				<h2>我的购物车</h2>
+				<h5>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步操作。</h5>
+			</div>
+			<div class="ncc-receipt-info">
+				<table width="100%" style="text-align: center;">
+					<tr class="title">
+						<th width="8%" align="left"><input type="checkbox" name="checkall" value="1"/> 全选</th>
+						<th width="45%">商品</th>
+						<th width="11%">单价(元)</th>
+						<th>数量</th>
+						<th width="11%">小计(元)</th>
+						<th width="11%">操作</th>
+					</tr>
+					<tr class="info">
+						<th colspan="7">
+							<div class="pull-right"><em>免邮费</em>满128包邮哦亲！！！<a href="#">去买满128</a></div>
+						</th>
+					</tr>
+					<tr class="cart-product">
+						<td><input type="checkbox" name="goods_id" value="1"/></td>
+						<td class="product">
+							<ul>
+								<a href="#"><li><img src="assets/images/temp/5.jpg" /></li></a>
+								<a href="#"><li>750ML初榨橄榄油礼盒 750ml</li></a>
+							</ul>
+						</td>
+						<td>125</td>
+						<td class="opera">
+							<a href="#" class="down">-</a>
+							<input type="text" name="number" value="1" />
+							<a href="#" class="up">+</a>
+							<div class="clearfix"></div>
+						</td>
+						<td>125</td>
+						<td>
+							<a href="#">删除</a> | 
+							<a href="#">收藏</a>
+						</td>
+					</tr>
+					<tr class="cart-product">
+						<td><input type="checkbox" name="goods_id" value="1"/></td>
+						<td class="product">
+							<ul>
+								<a href="#"><li><img src="assets/images/temp/6.jpg" /></li></a>
+								<a href="#"><li>750ML初榨橄榄油礼盒 750ml</li></a>
+							</ul>
+						</td>
+						<td>125</td>
+						<td class="opera">
+							<a href="#" class="down">-</a>
+							<input type="text" name="number" value="1" />
+							<a href="#" class="up">+</a>
+							<div class="clearfix"></div>
+						</td>
+						<td>125</td>
+						<td>
+							<a href="#">删除</a> | 
+							<a href="#">收藏</a>
+						</td>
+					</tr>
+					<tr class="cart-product">
+						<td><input type="checkbox" name="goods_id" value="1"/></td>
+						<td class="product">
+							<ul>
+								<a href="#"><li><img src="assets/images/temp/7.jpg" /></li></a>
+								<a href="#"><li>750ML初榨橄榄油礼盒 750ml</li></a>
+							</ul>
+						</td>
+						<td>125</td>
+						<td class="opera">
+							<a href="#" class="down">-</a>
+							<input type="text" name="number" value="1" />
+							<a href="#" class="up">+</a>
+							<div class="clearfix"></div>
+						</td>
+						<td>125</td>
+						<td>
+							<a href="#">删除</a> | 
+							<a href="#">收藏</a>
+						</td>
+					</tr>
+					<tr class="cart-product">
+						<td><input type="checkbox" name="goods_id" value="1"/></td>
+						<td class="product">
+							<ul>
+								<a href="#"><li><img src="assets/images/temp/1.jpg" /></li></a>
+								<a href="#"><li>750ML初榨橄榄油礼盒 750ml</li></a>
+							</ul>
+						</td>
+						<td>125</td>
+						<td class="opera">
+							<a href="#" class="down">-</a>
+							<input type="text" name="number" value="1" />
+							<a href="#" class="up">+</a>
+							<div class="clearfix"></div>
+						</td>
+						<td>125</td>
+						<td>
+							<a href="#">删除</a> | 
+							<a href="#">收藏</a>
+						</td>
+					</tr>
+					<tr class="cart-product">
+						<td><input type="checkbox" name="goods_id" value="1"/></td>
+						<td class="product">
+							<ul>
+								<a href="#"><li><img src="assets/images/temp/3.jpg" /></li></a>
+								<a href="#"><li>750ML初榨橄榄油礼盒 750ml</li></a>
+							</ul>
+						</td>
+						<td>125</td>
+						<td class="opera">
+							<a href="#" class="down">-</a>
+							<input type="text" name="number" value="1" />
+							<a href="#" class="up">+</a>
+							<div class="clearfix"></div>
+						</td>
+						<td>125</td>
+						<td>
+							<a href="#">删除</a> | 
+							<a href="#">收藏</a>
+						</td>
+					</tr>
+					<tr class="count">
+						<td colspan="7">
+							<div class="pull-right">
+								商品总价（不含运费）：500元
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clearfix"></div>
+			<button class="go-step2 pull-right" onclick="">下一步，核对您填写的信息！</button>
+		</div>
+	</form>
+</div>
+<div class="clearfix"></div>
+<!-- pJH 1204 end 顶部购物流程导航部分 -->
+<!-- PJH 1121 begin 猜你喜欢部分 -->
+<div id="guess-you-like">
+	<div class="pjh-container">
+		<div class="title">
+			<h3>猜你喜欢</h3>
+			<span class="pull-right more"><a href="#">换一批</a></span>
+		</div>
+		<div class="clearfix"></div>
+		<div class="product-list">
+			<ul>
+				<li>
+					<div class="img">
+						<a href="#"><img src="assets/images/temp/3.jpg" /></a>
+					</div>
+					<div class="name">
+						<a href="#">正品 2014春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色</a>
+					</div>
+					<div class="pirce"><em>￥</em>199.00</div>
+					<div class="sale-number">已售：<em>35</em> 件</div>
+					<div class="comment-number"><em>123</em> 人评价</div>
+				</li>
+				<li>
+					<div class="img">
+						<a href="#"><img src="assets/images/temp/1.jpg" /></a>
+					</div>
+					<div class="name">
+						<a href="#">正品 2014春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色</a>
+					</div>
+					<div class="pirce"><em>￥</em>199.00</div>
+					<div class="sale-number">已售：<em>35</em> 件</div>
+					<div class="comment-number"><em>123</em> 人评价</div>
+				</li>
+				<li>
+					<div class="img">
+						<a href="#"><img src="assets/images/temp/2.jpg" /></a>
+					</div>
+					<div class="name">
+						<a href="#">正品 2014春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色</a>
+					</div>
+					<div class="pirce"><em>￥</em>199.00</div>
+					<div class="sale-number">已售：<em>35</em> 件</div>
+					<div class="comment-number"><em>123</em> 人评价</div>
+				</li>
+				<li>
+					<div class="img">
+						<a href="#"><img src="assets/images/temp/4.jpg" /></a>
+					</div>
+					<div class="name">
+						<a href="#">正品 2014春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色</a>
+					</div>
+					<div class="pirce"><em>￥</em>199.00</div>
+					<div class="sale-number">已售：<em>35</em> 件</div>
+					<div class="comment-number"><em>123</em> 人评价</div>
+				</li>
+				<li>
+					<div class="img">
+						<a href="#"><img src="assets/images/temp/5.jpg" /></a>
+					</div>
+					<div class="name">
+						<a href="#">正品 2014春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色</a>
+					</div>
+					<div class="pirce"><em>￥</em>199.00</div>
+					<div class="sale-number">已售：<em>35</em> 件</div>
+					<div class="comment-number"><em>123</em> 人评价</div>
+				</li>
+				<li>
+					<div class="img">
+						<a href="#"><img src="assets/images/temp/6.jpg" /></a>
+					</div>
+					<div class="name">
+						<a href="#">正品 2014春装新款 女 绣花针织衫 开衫外套浮桑初 蓝色</a>
+					</div>
+					<div class="pirce"><em>￥</em>199.00</div>
+					<div class="sale-number">已售：<em>35</em> 件</div>
+					<div class="comment-number"><em>123</em> 人评价</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!-- PJH 1121 end 猜你喜欢部分 -->
+
+<!-- PJH 1113 begin 底部关于网站的ICONS展示部分 -->
+<div class="bottom-icons">
+	<div class="pjh-container">
+		<ul>
+			<li><img src="assets/images/bottom/icon1.png" /></li>
+			<li><img src="assets/images/bottom/icon2.png" /></li>
+			<li><img src="assets/images/bottom/icon3.png" /></li>
+			<li><img src="assets/images/bottom/icon4.png" /></li>
+		</ul>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!-- PJH 1113 end 底部关于网站的ICONS展示部分 -->
+
+<!-- PJH 1113 begin 底部文章部分 -->
+<div class="pjh-container" style="margin-bottom: 20px;">
+	<ul id="bottom-articles" class="pull-left border-right">
+		<li>
+			<dl>
+				<dt><a href="#">帮助中心</a></dt>
+				<dd><a href="#">如何搜索</a></dd>
+				<dd><a href="#">积分兑换说明</a></dd>
+				<dd><a href="#">我要买</a></dd>
+				<dd><a href="#">如何注册会员</a></dd>
+				<dd><a href="#">如何注册会员</a></dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">帮助中心</a></dt>
+				<dd><a href="#">如何搜索</a></dd>
+				<dd><a href="#">积分兑换说明</a></dd>
+				<dd><a href="#">我要买</a></dd>
+				<dd><a href="#">如何注册会员</a></dd>
+				<dd><a href="#">如何注册会员</a></dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">支付方式</a></dt>
+				<dd><a href="#">如何注册支付宝</a></dd>
+				<dd><a href="#">网银支付</a></dd>
+				<dd><a href="#">分期付款</a></dd>
+				<dd><a href="#">货到付款</a></dd>
+				<dd><a href="#">如何注册会员</a></dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">售后服务</a></dt>
+				<dd><a href="#">返修/退换货</a></dd>
+				<dd><a href="#">联系卖家</a></dd>
+				<dd><a href="#">退换货政策</a></dd>
+				<dd><a href="#">退换货流程</a></dd>
+				<dd><a href="#">如何注册会员</a></dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">客服中心</a></dt>
+				<dd><a href="#">修改会员资料</a></dd>
+				<dd><a href="#">修改收货地址</a></dd>
+				<dd><a href="#">修改会员密码</a></dd>
+				<dd><a href="#">修改支付密码</a></dd>
+				<dd><a href="#">如何注册会员</a></dd>
+			</dl>
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">购物指南</a></dt>
+				<dd><a href="#">购物流程</a></dd>
+				<dd><a href="#">会员介绍</a></dd>
+				<dd><a href="#">常见问题</a></dd>
+				<dd><a href="#">大家电</a></dd>
+				<dd><a href="#">如何注册会员</a></dd>
+			</dl>
+		</li>
+	</ul>
+	<div class="bottom-help pull-right">
+		<div class="phone-number">
+			<img src="assets/images/phone.jpg" />
+			400-872-7575
+		</div>
+		<div class="clearfix"></div>
+		<div class="email-address">
+			<img src="assets/images/message.jpg" />
+			991058975@qq.com
+		</div>
+		<div class="clearfix"></div>
+		<div class="download-apk">
+			<ul>
+				<li>
+					<dl>
+						<dt><a href="#">Andorid版</a></dt>
+						<dd>
+							<a href="#"><img src="assets/images/android.png" width="75px" height="75px" /></a>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><a href="#">IOS版</a></dt>
+						<dd>
+							<a href="#"><img src="assets/images/ios.png" width="75px" height="75px" /></a>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!-- PJH 1113 end 底部文章部分 -->
+<!-- PJH 1113 begin 友情链接及版权部分 -->
+<div id="site-version" class="pjh-container border-top">
+	<div class="links">
+		<a href="#">关于我们</a>|
+		<a href="#">联系我们</a>|
+		<a href="#">营销中心</a>|
+		<a href="#">手机慢慢买</a>|
+		<a href="#">友情链接</a>|
+		<a href="#">销售联盟</a>|
+		<a href="#">慢慢买社区</a>|
+		<a href="#">English Site</a>
+	</div>
+	<div class="copyright">
+		<span>Copyright © 2015-2045 *****电子商务有限公司 版权所有</span>
+		<span>黔ICP备15003552号</span>
+		<span><a href="#">站长统计</a></span>
+	</div>
+</div>
+<!-- PJH 1113 end 友情链接及版权部分 -->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+</body>
+</html>

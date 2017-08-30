@@ -1,0 +1,112 @@
+﻿/** 
+* @描述：购物车列表页面CSS样式文件 
+* @版本：beta 1.0 
+*/
+#top-route{border-bottom: 1px solid #f0f0f0;}
+.ncc-flow{width: 950px;height: 70px;float: right;margin: 20px 0;}
+.ncc-flow li{float: left;font-size: 12px;vertical-align: top;letter-spacing: normal;word-spacing: normal;display: inline-block;width: 25%;height: 70px;position: relative;z-index: 1;}
+.ncc-flow li i{background: #FFF url(../images/buy/buy_step.gif) no-repeat;width: 30px;height: 30px;margin-left: -15px;position: absolute;z-index: 2;top: 0;left: 50%;}
+.ncc-flow li i.step1{background-position: 0 0;}
+.ncc-flow li i.step2{background-position: -30px 0;}
+.ncc-flow li i.step3{background-position: -60px 0;}
+.ncc-flow li i.step4{background-position: -90px 0;}
+.ncc-flow li p{font-size: 14px/24px arial,"microsoft yahei";color: #CCC;text-align: center;width: 100%;height: 24px;position: absolute;z-index: 2;left: 0;bottom: 0;overflow: hidden;}
+.ncc-flow li sub{background-color: #FFF;width: 5px;height: 5px;margin-left: -3px;border: solid 1px #f0f0f0;border-radius: 4px;position: absolute;z-index: 2;top: 65px;left: 50%;}
+.ncc-flow li .hr{background-color: #DDD;width: 100%;height: 1px;border: none 0;position: absolute;z-index: 1;top: 68px;left: 0;}
+
+.ncc-main{}
+.ncc-main .ncc-main-title{height: 50px;padding: 15px 0;border: solid #F7F7F7;border-width: 1px 0 0;}
+.ncc-main .ncc-main-title h2{font: lighter 24px/30px arial,"microsoft yahei";color: #999;margin: 0px;}
+.ncc-main .ncc-main-title h5{font: 12px/20px arial,"microsoft yahei";color: #999;margin: 0px;}
+
+.ncc-receipt-info{color: #777;border: solid 1px #EEE;}
+.ncc-receipt-info table .title{background-color: #fafafa;}
+.ncc-receipt-info table .title th{padding: 9px 19px;}
+.ncc-receipt-info table .info{background-color: #FDFEDA;}
+.ncc-receipt-info table .info th{padding: 9px 19px;color: #999;font-weight: normal;}
+.ncc-receipt-info table .info th em{font-style: normal;padding: 5px 8px;background-color: #ff9000;margin-right: 5px;border-radius: 30px;color: #fff;}
+.ncc-receipt-info table .info th a{color: #ff9000;}
+
+.ncc-receipt-info table .cart-product{border-bottom: 1px solid #f0f0f0;}
+.ncc-receipt-info table .cart-product td{padding: 7px 19px;}
+.ncc-receipt-info table .cart-product td.product ul li{height: 35px;line-height: 35px;float: left;margin-right: 10px;}
+.ncc-receipt-info table .cart-product td.product ul li img{width: 35px;}
+.ncc-receipt-info table .cart-product td.opera{}
+.ncc-receipt-info table .cart-product td.opera .down{border: 1px solid #f0f0f0;width: 15px;height: 25px;line-height: 25px;display: block;float: left;margin-right: 5px;}
+.ncc-receipt-info table .cart-product td.opera input{width: 50px;display: block;float: left;height: 20px;}
+.ncc-receipt-info table .cart-product td.opera .up{border: 1px solid #f0f0f0;width: 15px;height: 25px;line-height: 25px;display: block;float: left;margin-left: 5px;}
+
+.ncc-receipt-info table .count{}
+.ncc-receipt-info table .count td{padding: 9px 19px;font-weight: 600;background-color: #fafafa;}
+
+.go-step2{border: none;padding: 10px 15px;background-color: #ff9000;color: #fff;margin-top: 15px;}
+
+/* PJH 2016-01-15 begin 填写核对购物信息部分 */
+/*收货人信息*/
+.ncc-receipt-info .consignee-info{width: 1180px;padding: 8px;}
+.ncc-receipt-info .consignee-info .title a{color: #ff9000;}
+.ncc-receipt-info .consignee-info h3{margin: 5px;display: inline;}
+.ncc-receipt-info .consignee-info .info{margin: 5px;}
+.ncc-receipt-info .consignee-info .info .mobile{margin-left: 15px;}
+.ncc-receipt-info .consignee-info .add-list{}
+.ncc-receipt-info .consignee-info .add-list ul{margin: 0px;padding: 0px;width: 1180px;}
+.ncc-receipt-info .consignee-info .add-list ul li{margin-top: 5px;border-top: 1px dotted #f0f0f0;height: 30px;line-height: 30px;background-color: #FAF9F8;}
+.ncc-receipt-info .consignee-info .add-list ul li .mobile{margin-left: 15px;}
+.ncc-receipt-info .consignee-info .add-list ul li .del{margin-left: 10px;}
+.ncc-receipt-info .consignee-info .add-list ul li .del a{color: #ff9000;}
+.ncc-receipt-info .consignee-info .add-list .add-addr{margin: 10px;}
+.ncc-receipt-info .consignee-info .add-list .add-addr table tr{height: 45px;line-height: 45px;}
+.ncc-receipt-info .consignee-info .add-list .add-addr table tr .consignee-user input{width: 145px;height: 20px;}
+.ncc-receipt-info .consignee-info .add-list .add-addr table tr .consignee-user i{color: red;margin-left: 5px;}
+.ncc-receipt-info .consignee-info .add-list .add-addr table tr .consignee-area select{width: 150px;height: 27px;padding: 0px 0px 0px 2px;margin-right: 8px;}
+.ncc-receipt-info .consignee-info .add-list .add-addr table tr .consignee-area i{color: red;margin-left: -3px;}
+.ncc-receipt-info .consignee-info .add-list .add-addr table tr .consignee-number input{width: 145px;height: 20px;}
+.ncc-receipt-info .consignee-info .add-list .add-addr table tr .consignee-number i{color: red;margin-left: 5px;}
+.ncc-receipt-info .consignee-info .add-list .add-addr table tr .consignee-detail textarea{width: 525px;height: 100px;}
+.ncc-receipt-info .consignee-info .add-list .add-addr table tr .consignee-detail i{color: red;margin-left: 5px;}
+.ncc-receipt-info .consignee-info .add-list .save{margin: 15px 5px 10px;}
+.ncc-receipt-info .consignee-info .add-list .save a{padding: 10px 15px;background-color: #ff9000;color: #fff;border-radius: 2px;}
+.ncc-receipt-info .consignee-info .add-list .save a:hover{background-color: #f30;}
+/*支付方式*/
+.ncc-receipt-info .payment-info{width: 1180px;padding: 8px;}
+.ncc-receipt-info .payment-info .title a{color: #ff9000;}
+.ncc-receipt-info .payment-info h3{margin: 5px;display: inline;}
+.ncc-receipt-info .payment-info .info{margin: 5px;}
+.ncc-receipt-info .payment-info .info .mobile{margin-left: 15px;}
+.ncc-receipt-info .payment-info .payment-list ul{margin: 0px;padding: 0px;width: 1180px;}
+.ncc-receipt-info .payment-info .payment-list ul li{margin-top: 5px;border-top: 1px dotted #f0f0f0;height: 30px;line-height: 30px;background-color: #FAF9F8;}
+.ncc-receipt-info .payment-info .payment-list .save{margin: 15px 5px 10px;}
+.ncc-receipt-info .payment-info .payment-list .save a{padding: 10px 15px;background-color: #ff9000;color: #fff;border-radius: 2px;}
+.ncc-receipt-info .payment-info .payment-list .save a:hover{background-color: #f30;}
+
+/*发票信息*/
+.ncc-receipt-info .invoice-info{width: 1180px;padding: 8px;}
+.ncc-receipt-info .invoice-info .title a{color: #ff9000;}
+.ncc-receipt-info .invoice-info h3{margin: 5px;display: inline;}
+.ncc-receipt-info .invoice-info .info{margin: 5px;}
+.ncc-receipt-info .invoice-info .info .mobile{margin-left: 15px;}
+.ncc-receipt-info .invoice-info .invoice-list ul{margin: 0px;padding: 0px;width: 1180px;}
+.ncc-receipt-info .invoice-info .invoice-list ul li{margin-top: 5px;border-top: 1px dotted #f0f0f0;height: 30px;line-height: 30px;background-color: #FAF9F8;}
+.ncc-receipt-info .invoice-info .invoice-list .save{margin: 15px 5px 10px;}
+.ncc-receipt-info .invoice-info .invoice-list .save a{padding: 10px 15px;background-color: #ff9000;color: #fff;border-radius: 2px;}
+.ncc-receipt-info .invoice-info .invoice-list .save a:hover{background-color: #f30;}
+/* PJH 2016-01-15 end 填写核对购物信息部分 */
+
+/* PJH 1121 begin 猜你喜欢部分 */
+#guess-you-like{margin-top: 20px;}
+#guess-you-like .title{background-color: #f5f5f5;width: 100%;height: 35px;line-height: 35px;}
+#guess-you-like .title h3{margin-left: 8px;margin-top: 0px;padding: 0px;float: left;margin-bottom: 0px;}
+#guess-you-like .title .more{margin-right: 10px;}
+#guess-you-like .title .more a{color: #999;font-weight: 600;}
+#cguess-you-like .product-list{border: 1px solid #f0f0f0;margin-top: 0px;height: 300px;}
+#guess-you-like .product-list ul{padding: 0px;margin: 10px 0px 5px 2px;}
+#guess-you-like .product-list ul li{float:left;width:199px;position: relative;overflow: hidden;height: 290px;}
+#guess-you-like .product-list ul li .img{position: absolute;top: 8px;left: 15px;}
+#guess-you-like .product-list ul li .img img{width: 170px;height: 170px;}
+#guess-you-like .product-list ul li .name{position: absolute;top: 185px;left: 15px;width: 170px;}
+#guess-you-like .product-list ul li .pirce{position: absolute;top: 230px;left: 15px;width: 170px;font-weight: 600;color: #ff9000;}
+#guess-you-like .product-list ul li .sale-number{position: absolute;top: 252px;left: 15px;}
+#guess-you-like .product-list ul li .sale-number em{color: #ff9000;font-weight: 600;}
+#guess-you-like .product-list ul li .comment-number{position: absolute;top: 252px;right: 15px;}
+#guess-you-like .product-list ul li .comment-number em{color: #ff9000;font-weight: 600;}
+/* PJH 1121 end 猜你喜欢部分 */

@@ -1,0 +1,225 @@
+﻿
+/**
+* @描述：产品详情页CSS样式文件
+
+* @时间：2015-11-21 12:42 am;* @版本：beta 1.0*//* PJH 1121 begin 面包屑导航开始*/#good-bread{margin: 5px 0px 15px;}
+#good-bread ul{margin: 0px;padding: 0px;}
+#good-bread ul li{float: left;margin-right: 5px;font-size: 15px;}
+#good-bread ul li.selected{font-weight: bold;}
+#good-bread ul li.split-icon{font-family: 黑体;font-size: 12px;}
+/* PJH 1121 end 面包屑导航结束*//* PJH 1121 begin 图片放大镜效果CSS*//* box*/.box{width:310px;margin:100px auto;}
+.tb-pic a{display:table-cell;text-align:center;vertical-align:middle;}
+.tb-pic a img{vertical-align:middle;}
+.tb-pic a{*display:block;*font-family:Arial;*line-height:1;}
+.tb-thumb{margin:10px 0 0 17px;overflow:hidden;}
+.tb-thumb li{background:none repeat scroll 0 0 transparent;float:left;height:52px;margin:0 0px 0 2px;overflow:hidden;padding:1px;}
+.tb-thumb li:first-child{margin: 0px;}
+.tb-s310, .tb-s310 a{height:310px;width:310px;}
+.tb-s310, .tb-s310 img{max-height:310px;max-width:310px;}
+.tb-s310 a{*font-size:271px;}
+.tb-s40 a{*font-size:35px;}
+.tb-s40, .tb-s40 a{height:50px;width:50px;}
+.tb-s40, .tb-s40 a img{width: 50px;height: 50px;}
+.tb-booth{border:1px solid #CDCDCD;position:relative;z-index:1;}
+.tb-booth .prev{position: absolute;bottom:-50px;left: -1px;width: 15px;height: 25px;color: #999;font-weight: bold;line-height: 25px;text-align: center;font-size: 20px;font-family: 黑体;z-index: 2;cursor: pointer;}
+.tb-booth .next{position: absolute;bottom:-50px;right: -1px;width: 15px;height: 25px;color: #999;font-weight: bold;line-height: 25px;text-align: center;font-size: 20px;font-family: 黑体;z-index: 2;cursor: pointer;}
+.tb-thumb .tb-selected{border: 1px solid #ff9000;height:50px;padding:2px;}
+.tb-thumb .tb-selected div{background-color:#FFFFFF;border:medium none;}
+.tb-thumb li div{border:1px solid #CDCDCD;}
+div.zoomDiv{z-index:999;position:absolute;top:0px;left:0px;width:200px;height:200px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+div.zoomMask{position:absolute;background:url("../images/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
+/* PJH 1121 end 图片放大镜效果CSS*//* PJH 1121 begin 产品详情DIV*/#good-detail{margin-top: 10px;}
+#good-detail .pjh-container{border: 1px solid #f0f0f0;height: 450px;}
+#good-detail .pjh-container .imageroom{width: 350px;height: 450px;border-right: 1px solid #f0f0f0;overflow: hidden;}
+#good-detail .pjh-container .imageroom .box{margin: 20px 19px 10px 19px;}
+#good-detail .pjh-container .imageroom .ext{margin-top: 5px;width: 100%;}
+#good-detail .pjh-container .imageroom .ext ul{margin: 5px 19px;}
+#good-detail .pjh-container .imageroom .ext ul li{float: left;padding: 3px 10px;border: 1px solid #f0f0f0;margin-right: 5px;}
+/* PJH 1121 end 产品详情DIV*//* PJH 1121 begin 产品信息部分*/#good-detail .pjh-container .inner-goods-info{width: 600px;height: 410px;padding: 20px 15px;position: relative;}
+#good-detail .pjh-container .inner-goods-info .name{}
+#good-detail .pjh-container .inner-goods-info .name h2{margin: 0px;padding: 0px;}
+#good-detail .pjh-container .inner-goods-info .desc{color: #ff9000;}
+#good-detail .pjh-container .inner-goods-info .spec-choose{margin: 15px 5px;}
+#good-detail .pjh-container .inner-goods-info .spec-choose ul{margin: 0px;padding: 0px;}
+#good-detail .pjh-container .inner-goods-info .spec-choose ul li{float: left;padding: 2px 5px;border: 1px solid #f0f0f0;margin-right: 10px;}
+#good-detail .pjh-container .inner-goods-info .spec-choose ul li.selected{border: 2px solid #ff9000;}
+#good-detail .pjh-container .inner-goods-info .price{width: 585px;height: 50px;background-color: #fafafa;margin-top: 15px;padding: 10px 15px;}
+#good-detail .pjh-container .inner-goods-info .price > ul{font-size: 14px;}
+#good-detail .pjh-container .inner-goods-info .price > ul .shop-price{margin-top: 5px;}
+#good-detail .pjh-container .inner-goods-info .price > ul .shop-price b{color: #ff9000;}
+#good-detail .pjh-container .inner-goods-info .price > ul .shop-price i{color: blue;font-size: 10px;}
+#good-detail .pjh-container .inner-goods-info .comment-number{margin: 5px 0px;}
+#good-detail .pjh-container .inner-goods-info .distribution-area{margin-top: 5px;position: relative;padding: 10px 15px;height: 25px;width: 585px}
+#good-detail .pjh-container .inner-goods-info .distribution-area .text{margin-right:5px;padding: 2px 15px 2px 5px;border: 1px solid #f0f0f0;position: relative;margin-top: -4px;}
+#good-detail .pjh-container .inner-goods-info .distribution-area i{width: 10px;height: 6px;overflow: hidden;display: block;position: absolute;right: 3px;top: 10px;background: url(../images/icons.gif) no-repeat;background-position: -25px -3px;}
+#good-detail .pjh-container .inner-goods-info .distribution-area:hover i{background-position: -25px -26px;}
+#good-detail .pjh-container .inner-goods-info .distribution-area .area-select{position: absolute;top: 33px;left: 63px;min-height: 200px;min-width: 300px;border: 1px solid #f0f0f0;background-color: #fff;box-shadow: 1px 1px 5px #999;z-index: 100;display: none;}
+#good-detail .pjh-container .inner-goods-info .service{padding: 0px 15px 8px;width: 585px;border-bottom: 1px dotted #f0f0f0;}
+#choose-btns{border-bottom:1px dotted #f0f0f0;height:45px;padding: 10px 15px;width: 585px;}
+#choose-btns .choose-amout{position: relative;}
+#choose-btns .choose-amout .sale-number{position: absolute;top: 0px;left: 0px;width: 40px;height: 40px;line-height: 40px;text-align: center;border: 1px solid #f0f0f0;color: #999;}
+#choose-btns .choose-amout .add-sale-number{position: absolute;top: 0px;left: 42px;text-align: center;width: 21px;height: 21px;line-height: 21px;border-right: 1px solid #f0f0f0;border-top: 1px solid #f0f0f0;border-bottom: 1px solid #f0f0f0;font-size: 16px;}
+#choose-btns .choose-amout .reduce-sale-number{position: absolute;top: 21px;left: 42px;text-align: center;width: 21px;height: 22px;line-height: 22px;border-right: 1px solid #f0f0f0;border-bottom: 1px solid #f0f0f0;font-size: 16px;}
+#choose-btns .buy-button{margin-left: 70px;}
+#choose-btns .opt-button .buy-button{border: none;width: 100px;height: 30px;margin-top: 10px;border-radius: 3px;background-color: #DAAE75;color: #fff;font-family: 黑体;font-weight: bold;margin-left: 5px;}
+#choose-btns .opt-button .add-cart-button{border: none;width: 100px;height: 30px;margin-top: 12px;border-radius: 3px;background-color: #FD6742;color: #fff;font-family: 黑体;font-weight: bold;margin-left: 75px;}
+/* PJH 1121 end 产品信息部分*//* PJH 1126 begin 百度分享部分CSS*/#good-detail .pjh-container .inner-goods-info .share-box{position: absolute;bottom: 0px;right: 5px;}
+#good-detail .pjh-container .inner-goods-info .share-box .notice{margin: 5px;}
+#good-detail .pjh-container .inner-goods-info .tips{margin-top: 10px;}
+#good-detail .pjh-container .inner-goods-info .tips ul{width: 530px;overflow: hidden;max-height: 66px;}
+#good-detail .pjh-container .inner-goods-info .tips em{font-style: normal;font-weight: 600;color: #999;}
+#good-detail .pjh-container .inner-goods-info .tips ul li{color: #f30;}
+#good-detail .right-block{position: relative;width: 218px;height: 450px;}
+#good-detail .right-block .brand{position: absolute;top: 10px;left: 0px;width: 218px;}
+#good-detail .right-block .brand a img{width: 180px;margin-left: 24px;}
+#good-detail .right-block .qr-code-box{position: absolute;bottom: 0px;width: 218px;height: 245px;overflow: hidden;}
+#good-detail .right-block .qr-code-box h3{margin: 0px;padding: 0px 10px;height: 27px;line-height: 27px;}
+#good-detail .right-block .qr-code-box .qr-code{}
+#good-detail .right-block .qr-code-box .qr-code img{width: 190px;height: 190px;margin: 14px;}
+/* PJH 1126 end 百度分享部分CSS*//* PJH 1127 begin 主体信息及推荐等部分*/#introduce-info{}
+#related-categorys,#related-brands{width: 250px;margin-top: 15px;}
+#related-categorys h3,#related-brands h3{margin: 0px;padding: 5px 8px;background-color: #fafafa;}
+#related-categorys .related-categorys-box,#related-brands .related-brands-box{border: 1px solid #f0f0f0;border-top: none;}
+#related-categorys ul,#related-brands ul{padding: 8px 10px;overflow: hidden;zoom: 1;}
+#related-categorys ul li,#related-brands ul li{float: left;width: 70px;height: 18px;padding: 3px 6px 3px 0;overflow: hidden;text-align: center;}
+#rankingList{width: 250px;margin-top: 15px;}
+#rankingList h3{margin: 0px;padding: 5px 8px;background-color: #fafafa;}
+#rankingList .tabs-nav{overflow: visible;margin: 0px;padding: 10px 9px 0px;width: 230px;border: 1px solid #f0f0f0;border-top: none;zoom: 1;height: 29px;}
+#rankingList .tabs-nav li{font-size: 10px;background-color: #e3e3e3;color: #000;border: 1px solid #f0f0f0;float: left;height: 28px;line-height: 28px;margin-bottom: -1px;width: 70px;margin-left: 4px;text-align: center;}
+#rankingList .tabs-nav li.selected{background-color: #fff;color: #ff9000;font-weight: 600;margin-top: 1px;border-bottom: none;}
+#rankingList .tabs-nav li.selected a{background-color: #fff;}
+#rankingList .tabs-panel{padding: 10px 9px 10px;width: 230px;border: 1px solid #f0f0f0;border-top: none;}
+#rankingList .tabs-panel li{display: none;}
+#rankingList .tabs-panel li.selected{display: block;}
+#rankingList .tabs-panel li dl{margin: 0px;padding: 0px;}
+#rankingList .tabs-panel li dd{border-top: 1px dotted #f0f0f0;margin: 10px 5px;padding: 0px;position: relative;height: 70px;}
+#rankingList .tabs-panel li dd.first-child{border-top: none;}
+#rankingList .tabs-panel li dd .sort{font-size: 10px;position: absolute;top: 10px;left: 0px;width: 20px;height: 20px;border-radius: 50%;text-align: center;line-height: 20px;color: #fff;}
+#rankingList .tabs-panel li dd .thumb{position: absolute;top: 10px;left: 25px;}
+#rankingList .tabs-panel li dd .thumb a img{width: 60px;height: 60px;}
+#rankingList .tabs-panel li dd .name{position: absolute;top: 10px;left: 90px;width: 130px;height: 44px;overflow: hidden;margin-top: -3px;}
+#rankingList .tabs-panel li dd .price{position: absolute;top: 50px;left: 90px;color: #ff9000;font-weight: 600;font-size: 14px;}
+#rankingList .tabs-panel li dd .sale-number,#rankingList .tabs-panel li dd .comment-number,#rankingList .tabs-panel li dd .before-price{position: absolute;top: 50px;right: 5px;}
+#rankingList .tabs-panel li dd .sale-number em,#rankingList .tabs-panel li dd .comment-number em{color: #ff9000;}
+#recont-purchase,#recont-record{border: 1px solid #f0f0f0;margin-top: 15px;border-bottom: none;}
+#recont-purchase h3,#recont-record h3{margin: 0px;padding: 5px 8px;background-color: #fafafa;}
+#recont-purchase ul,#recont-record ul{margin: 0px;padding: 0px;}
+#recont-purchase ul li,#recont-record ul li{position: relative;width: 250px;overflow: hidden;height: 95px;border-bottom: 1px dotted #f0f0f0;}
+#recont-purchase ul li .thumb,#recont-record ul li .thumb{position: absolute;top: 10px;left: 15px;overflow: hidden;}
+#recont-purchase ul li .thumb img,#recont-record ul li .thumb img{width: 75px;height: 75px;}
+#recont-purchase ul li .goods-name,#recont-record ul li .goods-name{position: absolute;top: 5px;left: 98px;width: 142px;}
+#recont-purchase ul li .price,#recont-record ul li .price{position: absolute;bottom: 0px;left: 98px;}
+#recont-purchase ul li .price em,#recont-record ul li .price em{font-style: normal;font-size: 14px;color: #ff9000;font-weight: 600;}
+#recommend-adv{margin: 15px 0px 0px;padding: 0px;}
+#recommend-adv li{margin-top: 10px;margin: 0px;padding: 0px;}
+/* PJH 1127 end 主体信息及推荐等部分*/
+
+/* PJH 1201 begin 右边主体部分*/
+#introduce-info .right-box{width: 935px;min-height: 500px;border: 1px solid #f0f0f0;margin-right: -1px;margin-top: 20px;}
+/* PJH 1201 begin 购买组合 */
+#introduce-info .right-box .sale-together{padding: 895px;padding: 15px 30px 20px;height: 100px;}
+#introduce-info .right-box > h3.sale-together-title{margin: 0px;padding: 7px 18px;background-color: #fafafa;font-weight: normal;}
+#introduce-info .right-box .sale-together ul{}
+#introduce-info .right-box .sale-together ul li{float: left;font-size:14px;font-family: 宋体;}
+#introduce-info .right-box .sale-together ul li.add-icon{width: 32px;text-align: center;height: 100px;line-height: 100px;}
+#introduce-info .right-box .sale-together ul li.equal-icon{width: 40px;text-align: center;height: 100px;line-height: 100px;}
+#introduce-info .right-box .sale-together ul li.result{position: relative;text-align: center;height: 100px;line-height: 100px;}
+#introduce-info .right-box .sale-together ul li.result span{position: absolute;top: 0px;left: 0px;margin-top: -14px;}
+#introduce-info .right-box .sale-together ul li a img{width: 100px;}
+/* PJH 1201 end 购买组合 */
+/* PJH 1201 begin 产品详情、评价等的Tab切换 */
+#introduce-info .right-box > .tabs-nav{background-color: #fafafa;margin-top: 5px;width: 935px;height: 31px;border-bottom: 1px solid #FF9000;border-top: 1px solid #f0f0f0;}
+#introduce-info .right-box > .tabs-nav ul li{cursor: pointer;float: left;height: 30px;line-height: 30px;padding: 0px 20px;border-bottom: 1px solid #f0f0f0;border-right: 1px solid #f0f0f0;}
+#introduce-info .right-box > .tabs-nav ul li.selected{border-left: 1px solid #FF9000;border-right: 1px solid #FF9000;background-color: #fff;border-bottom: none;margin-top: -7px;border-top: 2px solid #ff9000;height: 37px;margin-left: -1px;}
+#introduce-info .right-box > .tabs-nav .download-android-apk{height: 30px;line-height: 30px;margin-right: 15px;}
+#introduce-info .right-box > .tabs-nav .add-to-cart{padding: 5px 10px;margin-right: 10px;border: none;text-align: center;border-radius: 2px;background-color: #FD6742;color: #fff;font-family: 黑体;}
+#introduce-info .right-box > .tabs-nav .add-to-cart:hover{background-color: #D84926;}
+#introduce-info .right-box > .tabs-panel{}
+#introduce-info .right-box > .tabs-panel > li{display: none;width: 935px;padding: 10px 0px;}
+#introduce-info .right-box > .tabs-panel > li.selected{display: block;}
+
+/* PJH 1218 begin 商品评论部分 */
+#comments{}
+#comments .title{margin: 0px 5px 0px 0px;padding: 0px 0px 0px 20px;float: left;border-bottom: 2px solid #F0F0F0;width: 915px;height:40px;line-height: 40px;}
+#comments .title b{font-size: 16px;}
+#comments .comment-count{width: 895px;padding: 10px 20px;min-height: 130px;}
+#comments .comment-count h4{margin: 0px;padding: 0px;}
+#comments .comment-count .rate{margin: 25px 10px;}
+#comments .comment-count .rate span{font: 400 46px/30px arial;color: #FF9000;}
+#comments .comment-count .rate em{font-size: 24px;color: #FF9000;}
+#comments .comment-count .precent{margin: 10px 15px;}
+#comments .comment-count .precent ul{margin: 0px;padding: 0px;}
+#comments .comment-count .precent ul li{position: relative;height: 26px;line-height: 26px;}
+#comments .comment-count .precent ul li em{color: #e3e3e3;}
+#comments .comment-count .precent ul li .bg-line{width: 100px;height: 15px;background-color: #F0F0F0;position: absolute;top: 3px;left: 65px;z-index: 2;}
+#comments .comment-count .precent ul li .number-line{height: 15px;background-color: #FF9000;position: absolute;top: 3px;left: 65px;z-index: 3;}
+#comments .comment-count .precent ul li .comment-people-number{height: 15px;position: absolute;top: -1px;width: 100px;left: 175px;z-index: 2;}
+#comments .comment-count .image-block{margin-left: 175px;height: 118px;}
+#comments .comment-count .image-block h4{margin: 0px 0px 0px 10px;}
+#comments .comment-count .image-block ul{margin: 0px 0px 0px 10px;height: 89px;overflow: hidden;width: 320px;}
+#comments .comment-count .image-block ul li{border-radius: 2px;float: left;width: 95px;margin: 3px;background-color: #F0F0F0;text-align: center;color: #999;font-size: 10px;}
+#comments .comment-count .image-block ul li:hover{color: #fff;background-color: #FF9000;}
+#comments .comment-count .image-block ul li:hover em{color: #fff;}
+#comments .comment-count .image-block ul li .good{color: green;font-weight: 600;}
+#comments .comment-count .image-block ul li .bad{color: red;font-weight: 600;}
+#comments .comment-count .comment-now{padding-left: 10px;height: 118px;}
+#comments .comment-count .comment-now h4{margin: 30px 0px 8px 0px;}
+#comments .comment-count .comment-now a{padding: 5px 55px;border-radius: 2px;background-color: #FF9000;color: #fff;}
+#comments .comment-count .comment-now a:hover{background-color: #FF7A00;}
+
+#comments .comment-list{margin-top: 12px;}
+#comments .comment-list > .tabs-nav{background-color: #fafafa;margin-top: 6px;width: 935px;height: 31px;border-bottom: 1px solid #FF9000;border-top: 1px solid #f0f0f0;}
+#comments .comment-list > .tabs-nav ul li{cursor: pointer;float: left;height: 30px;line-height: 30px;padding: 0px 20px;border-bottom: 1px solid #f0f0f0;border-right: 1px solid #f0f0f0;}
+#comments .comment-list > .tabs-nav ul li.selected{border-left: 1px solid #FF9000;border-right: 1px solid #FF9000;background-color: #fff;border-bottom: none;margin-top: -7px;border-top: 2px solid #ff9000;height: 37px;margin-left: -1px;}
+#comments .comment-list > .tabs-nav .download-android-apk{height: 30px;line-height: 30px;margin-right: 15px;}
+#comments .comment-list > .tabs-nav .add-to-cart{padding: 5px 10px;margin-right: 10px;border: none;text-align: center;border-radius: 2px;background-color: #FD6742;color: #fff;font-family: 黑体;}
+#comments .comment-list > .tabs-nav .add-to-cart:hover{background-color: #D84926;}
+#comments .comment-list > .tabs-panel{}
+#comments .comment-list > .tabs-panel > li{display: none;width: 935px;padding: 10px 0px;}
+#comments .comment-list > .tabs-panel > li.selected{display: block;}
+#comments .comment-list > .tabs-panel > li .comment-title{position: relative;width: 933px;margin-left: 1px;height: 35px;background-color: #fafafa;}
+#comments .comment-list > .tabs-panel > li .comment-title .detail{width: 530px;text-align: center;height: 35px;line-height: 35px;color: #6B6262;font-weight: 600;}
+#comments .comment-list > .tabs-panel > li .comment-title .degree{width: 190px;text-align: center;height: 35px;line-height: 35px;color: #6B6262;font-weight: 600;}
+#comments .comment-list > .tabs-panel > li .comment-title .customer{width: 210px;text-align: center;height: 35px;line-height: 35px;color: #6B6262;font-weight: 600;}
+#comments .comment-list > .tabs-panel > li .comment-body{position: relative;width: 890px;height: 115px;margin: 15px 20px 0px;padding-top: 15px;}
+#comments .comment-list > .tabs-panel > li .comment-body .detail{width: 510px;margin-top: 15px;}
+#comments .comment-list > .tabs-panel > li .comment-body .degree{width: 190px;text-align: center;margin-top: 30px;}
+#comments .comment-list > .tabs-panel > li .comment-body .degree img{width: 18px;height: 18px;}
+#comments .comment-list > .tabs-panel > li .comment-body .customer{width: 190px;text-align: center;position: relative;}
+#comments .comment-list > .tabs-panel > li .comment-body .customer .thumb{left: 30px;;position: absolute;width: 50px;height: 50px;}
+#comments .comment-list > .tabs-panel > li .comment-body .customer .thumb img{width: 50px;height: 50px;border-radius: 50%;}
+#comments .comment-list > .tabs-panel > li .comment-body .customer .customer-name{position: absolute;top: 15px;left: 90px;font-weight: 600;}
+#comments .comment-list > .tabs-panel > li .comment-body .customer .customer-name= a{color: #ff9000;}
+#comments .comment-list > .tabs-panel > li .comment-body .customer .level{position: absolute;top: 55px;left: 35px;}
+#comments .comment-list > .tabs-panel > li .comment-body .customer .buy-time{position: absolute;top: 75px;left: 35px;}
+#comments .comment-list > .tabs-panel > li .comment-body .customer .source{position: absolute;top: 95px;left: 35px;}
+
+#comments .comment-list > .tabs-panel > li .comment-page{}
+#comments .comment-list > .tabs-panel > li .comment-page dl{margin: 20px 10px 0px;padding: 0px;}
+#comments .comment-list > .tabs-panel > li .comment-page dl dd{float: left;margin: 0px;padding: 3px 10px;border: 1px solid #f0f0f0;margin-left: -1px;}
+#comments .comment-list > .tabs-panel > li .comment-page dl dd.cur{background-color: #FF9000;}
+#comments .comment-list > .tabs-panel > li .comment-page dl dd.cur a{color: #FFF;}
+#comments .comment-list > .tabs-panel > li .comment-page dl dd:hover{background-color: #FF9000;}
+#comments .comment-list > .tabs-panel > li .comment-page dl dd:hover a{color: #fff;cursor: pointer;}
+
+/* PJH 1220 begin 猜你喜欢部分 */
+#guess-you-like{margin-top: 20px;}
+#guess-you-like .title{background-color: #f5f5f5;width: 100%;height: 35px;line-height: 35px;}
+#guess-you-like .title h3{margin-left: 8px;margin-top: 0px;padding: 0px;float: left;margin-bottom: 0px;}
+#guess-you-like .title .more{margin-right: 10px;}
+#guess-you-like .title .more a{color: #999;font-weight: 600;}
+#cguess-you-like .product-list{border: 1px solid #f0f0f0;margin-top: 0px;height: 300px;}
+#guess-you-like .product-list ul{padding: 0px;margin: 10px 0px 5px 2px;}
+#guess-you-like .product-list ul li{float:left;width:199px;position: relative;overflow: hidden;height: 290px;}
+#guess-you-like .product-list ul li .img{position: absolute;top: 8px;left: 15px;}
+#guess-you-like .product-list ul li .img img{width: 170px;height: 170px;}
+#guess-you-like .product-list ul li .name{position: absolute;top: 185px;left: 15px;width: 170px;}
+#guess-you-like .product-list ul li .pirce{position: absolute;top: 230px;left: 15px;width: 170px;font-weight: 600;color: #ff9000;}
+#guess-you-like .product-list ul li .sale-number{position: absolute;top: 252px;left: 15px;}
+#guess-you-like .product-list ul li .sale-number em{color: #ff9000;font-weight: 600;}
+#guess-you-like .product-list ul li .comment-number{position: absolute;top: 252px;right: 15px;}
+#guess-you-like .product-list ul li .comment-number em{color: #ff9000;font-weight: 600;}
+/* PJH 1220 end 猜你喜欢部分 */
+/* PJH 1218 end 商品评论部分 */
+
+/* PJH 1201 end 右边主体部分*/

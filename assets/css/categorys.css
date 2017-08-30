@@ -1,0 +1,136 @@
+﻿/** 
+* @描述：二级分页页面CSS样式文件 
+
+* @版本：beta 1.0 
+*/
+/* PJH 1120 begin 面包屑导航开始 */
+.bread-nav{width: 100%;padding: 5px 0px 15px;}
+.bread-nav .pjh-container > ul{margin: 0px;padding: 0px;}
+.bread-nav .pjh-container > ul > li{float: left;margin-right: 5px;}
+/* PJH 1120 end 面包屑导航结束 */
+
+/* PJH 1120 begin 品牌筛选开始 */
+.brand-list{padding: 5px 0px;}
+.brand-list .title{border-bottom: 1px solid #DDD;background: #fafafa;line-height: 34px;height: 34px;overflow: hidden;zoom: 1;}
+.brand-list .title h3{float: left;padding-left: 10px;margin-top: 0px;}
+.brand-list .title h3 b{color: #e4393c;margin-right: 5px;font-weight: 600;}
+.brand-list .title h3 em{color: #999;font-weight: 600;}
+.brand-list .title .count{float: left;padding-left: 15px;color: #999;}
+.brand-box{padding: 5px;border: 2px solid #ff9000;color: #999;height: 260px;overflow-x:hidden;overflow-y: auto;}
+.brand-box .key{float: left;margin: 15px 20px 0px 30px;}
+.brand-box > ul{float: left;padding: 0px;margin-top: 16px;width: 1050px;}
+.brand-box > ul > li{position: relative;width: 114px;height: 44px;line-height: 40px;text-align: center;border: 1px solid #F1F1F1;float: left;margin-left: -1px;margin-top: -1px;}
+.brand-box > ul > li:hover{border-left: 2px solid #f30;border-top: 2px solid #f30;border-right: 3px solid #f30;border-bottom: 2px solid #f30;width: 111px;height: 42px;}
+.brand-box > ul > li .brand-img{position: absolute;top: 4px;left: 6px;width: 102px;height: 36px;}
+.brand-box > ul > li .brand-font{position: absolute;top: 4px;left: 6px;color: #f30;font-weight: 600;font-family: 黑体;font-size: 12px;width: 102px;height: 36px;text-align: center;}
+/* PJH 1120 begin 品牌筛选结束 */
+
+/* PJH 1120 begin 条件筛选开始 */
+.prop-line{border-bottom: 1px dotted #F1F1F1;padding: 10px 0px;position: relative;min-height: 22px;}
+.prop-line .p-key{float: left;font-weight: bold;margin-right:15px;line-height: 24px;white-space: nowrap;}
+.prop-line .p-value{float: left;width: 840px;}
+.prop-line .p-value ul{}
+.prop-line .p-value ul li{float: left;height: 24px;margin-right: 20px;white-space: nowrap;line-height: 24px;}
+.prop-line .p-value ul li.selected a{background-color: #ff9000;color: #fff;padding: 1px;}
+.prop-line .p-value ul li.price-search{float: left;margin-bottom: 4px;margin-top: 2px;}
+.prop-line .p-value ul li.price-search .price-text{width: 38px;padding: 1px;float: left;height: 17px;line-height: 17px;border: 1px solid #CCC;}
+.prop-line .p-value ul li.price-search .price-btn{display: inline-block;line-height: 22px;height: 22px;border-radius: 2px;cursor: pointer;border: 1px solid #DDD;color: #999;background-color: #f7f7f7;margin-top: -5px; margin-left: 8px;}
+.prop-line .p-value ul li.price-search .price-btn:hover{background-color: #ff9000;color: #fff;}
+.prop-line .p-value ul li.price-search em{float: left;font-style: normal;margin: 0px 6px;}
+/* PJH 1120 end 条件筛选开结束 */
+
+/* PJH 1121 begin 产品列表顶部排序搜索部分 */
+#category-products{width: 100%;}
+#category-products .top-condition{margin-top: 8px;height: 38px;background-color: #fafafa;border: 1px solid #cacaca;overflow: hidden;}
+#category-products .top-condition .sort{margin: 6px 4px;}
+#category-products .top-condition .sort dl{margin: 0px;padding: 0px;line-height: 24px;}
+#category-products .top-condition .sort dl dt{float: left;}
+#category-products .top-condition .sort dl dd{float: left;margin: 0px;padding: 0px;}
+#category-products .top-condition .sort dl dd.selected{}
+#category-products .top-condition .sort dl dd.selected a{background-color:#ff9000;color: #fff;}
+#category-products .top-condition .sort dl dd a{display: block;padding: 0px 10px;background: #FFFFFF;border: 1px solid #cdcdcd;margin-right: 7px;}
+#category-products .top-condition .result-search{margin-left: 26px;margin-top: 8px;}
+#category-products .top-condition .result-search .result-search-input{width: 60px;padding: 1px;height: 17px;line-height: 17px;vertical-align: middle;border: 1px solid #CCC;}
+#category-products .top-condition .result-search .result-search-btn{line-height: 22px;height: 22px;border-radius: 2px;cursor: pointer;border: 1px solid #DDD;color: #666;background-color: #f7f7f7;padding: 0px 6px;}
+#category-products .top-condition .mini-page{}
+#category-products .top-condition .mini-page dl{margin: 0px;padding: 0px;line-height: 38px;}
+#category-products .top-condition .mini-page dl dt{float: left;border-right: 1px solid #e1e1e1;padding: 0px 18px;}
+#category-products .top-condition .mini-page dl dt em{font-style: normal;color: #ff6702;margin: 0 4px;}
+#category-products .top-condition .mini-page dl dd{float: left;margin: 0px;padding: 0px;}
+#category-products .top-condition .mini-page dl dd a{display: block;width: 38px;height: 358px;text-align: center;font-family: serif;font-weight: bold;font-size: 14px;color: 6d6d6d;text-decoration: none;}
+#category-products .top-condition .mini-page dl dd a.disabled{color: #c7c7c7;}
+#category-products .top-condition .mini-page dl dd em{color: #ff6702;font-style: normal;}
+/* PJH 1121 end 产品列表顶部排序搜索部分 */
+/* PJH 1121 begin 产品列表部分 */
+#category-products .product-list{margin-top: 10px;overflow: hidden;}
+#category-products .product-list ul{margin: 1px;padding: 0px;}
+#category-products .product-list ul li{position: relative;width: 238px;height: 370px;float: left;border: 1px solid #f0f0f0;margin-left: -1px;margin-top: -1px;}
+#category-products .product-list ul li:hover{box-shadow:0px 0px 6px #cacaca;}
+#category-products .product-list ul li .item{}
+#category-products .product-list ul li .item img{width: 200px;overflow: hidden;height: 200px;margin: 18px 10px 5px 19px;}
+#category-products .product-list ul li .item .name{height: 40px;overflow: hidden;word-break: break-all;line-height: 20px;margin: 0px 15px;}
+#category-products .product-list ul li .item .item-line{border-bottom: 1px solid #eee;margin: 5px 0px;}
+#category-products .product-list ul li .item .price{margin: 0px 15px;font-size: 16px;font-weight: 600;color: #FF6702;height: 19px;}
+#category-products .product-list ul li .item .price .market-price{color: #999;font-weight: normal;}
+#category-products .product-list ul li .item .sales{margin-left: 15px;margin-top: 3px;}
+#category-products .product-list ul li .item .sales b{color: #ff9000;font-weight: 600;}
+#category-products .product-list ul li .item .comments{margin-right: 8px;}
+#category-products .product-list ul li .item .comments b{color: #ff9000;font-weight: 600;}
+#category-products .product-list ul li .item .btns{margin: 5px 15px;}
+#category-products .product-list ul li .item .btns .to-compare{font-size: 10px;height: 25px;line-height: 25px;border: 1px solid #DDD;padding: 3px 5px;position: relative;background: #fff;margin-right: 5px;}
+#category-products .product-list ul li .item .btns .to-compare:hover{background-color: #ff9000;color: #fff;border: none;border-radius: 2px;}
+#category-products .product-list ul li .item .btns .to-collect{font-size: 10px;height: 25px;line-height: 25px;border: 1px solid #DDD;padding: 3px 5px;position: relative;background: #fff;margin-right: 5px;}
+#category-products .product-list ul li .item .btns .to-collect:hover{background-color: #ff9000;color: #fff;border: none;border-radius: 2px;}
+#category-products .product-list ul li .item .btns .to-cart{font-size: 10px;height: 25px;line-height: 25px;border: 1px solid #DDD;padding: 3px 5px;position: relative;background: #fff;}
+#category-products .product-list ul li .item .btns .to-cart:hover{background-color: #ff9000;color: #fff;border: none;border-radius: 2px;}
+/* PJH 1122 end 产品列表部分 */
+
+/* PJH 1121 begin 产品分页部分 */
+#category-products-paging{margin-top: 20px;}
+#category-products-paging ul{margin-left: 350px;padding: 0px;}
+#category-products-paging ul li{float: left;height: 30px;line-height: 30px;border: 1px solid #f0f0f0;padding: 0px 10px;margin-left: -1px;}
+#category-products-paging ul li.selected{background-color: #ff9000;color: #fff;}
+#category-products-paging ul li.disabled{background-color: #f5f5f5;color: #999;cursor: text;border: 1px solid #fff;}
+#category-products-paging ul li.go{border: none;height: 30px;line-height: 30px;}
+#category-products-paging ul li.go .page-number-text{width: 30px;padding: 1px;height: 20px;line-height: 20px;border: 1px solid #ccc;}
+#category-products-paging ul li.go .page-number-btn{display: inline-block;padding: 3px 5px;border-radius: 2px;cursor: pointer;border: 1px solid #DDD;color: #999;background-color: #f7f7f7;}
+#category-products-paging ul li.go .page-number-btn:hover{background-color: #ff9000;color: #fff;}
+/* PJH 1121 end 产品分页部分 */
+
+/* PJH 1121 begin 商家推荐部分 */
+#category-prompt{margin-top: 20px;}
+#category-prompt .title{background-color: #f5f5f5;width: 100%;height: 35px;line-height: 35px;}
+#category-prompt .title h3{margin-left: 8px;margin-top: 0px;padding: 0px;float: left;margin-bottom: 0px;}
+#category-prompt .title .more{margin-right: 10px;}
+#category-prompt .title .more a{color: #999;font-weight: 600;}
+#category-prompt .product-list{border: 1px solid #f0f0f0;margin-top: 0px;height: 300px;}
+#category-prompt .product-list ul{padding: 0px;margin: 10px 0px 5px 2px;}
+#category-prompt .product-list ul li{float:left;width:199px;position: relative;overflow: hidden;height: 290px;}
+#category-prompt .product-list ul li .img{position: absolute;top: 8px;left: 15px;}
+#category-prompt .product-list ul li .img img{width: 170px;height: 170px;}
+#category-prompt .product-list ul li .name{position: absolute;top: 185px;left: 15px;width: 170px;}
+#category-prompt .product-list ul li .pirce{position: absolute;top: 230px;left: 15px;width: 170px;font-weight: 600;color: #ff9000;}
+#category-prompt .product-list ul li .sale-number{position: absolute;top: 252px;left: 15px;}
+#category-prompt .product-list ul li .sale-number em{color: #ff9000;font-weight: 600;}
+#category-prompt .product-list ul li .comment-number{position: absolute;top: 252px;right: 15px;}
+#category-prompt .product-list ul li .comment-number em{color: #ff9000;font-weight: 600;}
+/* PJH 1121 end 商家推荐部分 */
+
+/* PJH 1121 begin 猜你喜欢部分 */
+#guess-you-like{margin-top: 20px;}
+#guess-you-like .title{background-color: #f5f5f5;width: 100%;height: 35px;line-height: 35px;}
+#guess-you-like .title h3{margin-left: 8px;margin-top: 0px;padding: 0px;float: left;margin-bottom: 0px;}
+#guess-you-like .title .more{margin-right: 10px;}
+#guess-you-like .title .more a{color: #999;font-weight: 600;}
+#cguess-you-like .product-list{border: 1px solid #f0f0f0;margin-top: 0px;height: 300px;}
+#guess-you-like .product-list ul{padding: 0px;margin: 10px 0px 5px 2px;}
+#guess-you-like .product-list ul li{float:left;width:199px;position: relative;overflow: hidden;height: 290px;}
+#guess-you-like .product-list ul li .img{position: absolute;top: 8px;left: 15px;}
+#guess-you-like .product-list ul li .img img{width: 170px;height: 170px;}
+#guess-you-like .product-list ul li .name{position: absolute;top: 185px;left: 15px;width: 170px;}
+#guess-you-like .product-list ul li .pirce{position: absolute;top: 230px;left: 15px;width: 170px;font-weight: 600;color: #ff9000;}
+#guess-you-like .product-list ul li .sale-number{position: absolute;top: 252px;left: 15px;}
+#guess-you-like .product-list ul li .sale-number em{color: #ff9000;font-weight: 600;}
+#guess-you-like .product-list ul li .comment-number{position: absolute;top: 252px;right: 15px;}
+#guess-you-like .product-list ul li .comment-number em{color: #ff9000;font-weight: 600;}
+/* PJH 1121 end 猜你喜欢部分 */
